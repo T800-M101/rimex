@@ -1,0 +1,44 @@
+header {
+    background-color: #ffffff; 
+    width: 100%;               
+    height: 100px;            
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 90%;               
+    max-width: 1200px;        
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;                
+}
+
+.links a {
+    font-size: clamp(1.4rem, 1.2vw, 1.6rem);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Variante específica para el header */
+.links a.btn {
+    min-width: 96.59px;
+    height: 32.59px;
+    padding: 0 12px;
+}

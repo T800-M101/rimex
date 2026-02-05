@@ -1,212 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nationwide Dry Van Freight Services in Texas | RIMEX Carriers</title>
-    <meta name="description" content="RIMEX Carriers is a Texas-based transportation company offering reliable nationwide dry van freight services across the United States. Get a free quote today.">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="js/script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nationwide Dry Van Freight Services in Texas | RIMEX Carriers</title>
+<meta name="description"
+    content="RIMEX Carriers is a Texas-based transportation company offering reliable nationwide dry van freight services across the United States. Get a free quote today.">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base/variables.css">
+<link rel="stylesheet" href="styles/base/globals.css">
+<link rel="stylesheet" href="styles/layout/header.css">
+<link rel="stylesheet" href="styles/components/hamburguer.css">
+<link rel="stylesheet" href="styles/components/language-switch.css">
+<link rel="stylesheet" href="styles/components/buttons.css">
+<link rel="stylesheet" href="styles/responsive/mobile.css">
 
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="js/script.js" defer></script>
+
 <body>
+
     <header>
-        <div class="container">
-            <h1>RIMEX</h1>
-            <label class="hamburguer-menu"> 
-                <input type="checkbox" name="" id="">
-            </label>
-            <nav class="navigation">
-                <a href="index.html">Home</a>
-                <a href="/services">Service</a>
-                <a href="/about-us">About Us</a>
-                <a href="/coverage">Coverage</a>
-                <a href="/careers">Careers</a>
-                <a href="contact">Contact</a>
-                <a href="#" class="btn">Get a quote</a>
-            </nav>
+  <nav class="main-menu">
+    <h1 data-i18n>RIMEX</h1>
+
+    <label class="hamburguer-menu" for="menu-toggle">
+      <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+    </label>
+
+    <div class="links">
+      <a href="" data-i18n="home">Home</a>
+      <a href="/services" data-i18n="services">Services</a>
+      <a href="/about" data-i18n="about">About Us</a>
+      <a href="/coverage" data-i18n="coverage">Coverage</a>
+      <a href="careers" data-i18n="careers">Careers</a>
+      <a href="/contact" data-i18n="contact">Contact</a>
+
+      <div class="header-actions">
+        <a href="/get-quote" class="btn" data-i18n="quote">Get a quote</a>
+
+        <div class="language-switch">
+          <label class="switch">
+            <input type="checkbox" id="lang-toggle" aria-label="Toggle language">
+            <span class="slider round"></span>
+          </label>
+          <span class="lang-label" id="lang-label">EN</span>
         </div>
-    </header>
-
-    <section class="deliver container">
-        <h2>Built to deliver</h2>
-
-        <p>RIMEX Carriers is a Texas-based transportation company providing reiable nationwide dry van freight services across the United States</p>
-
-        <form action="">
-            <span>Need a reliable transportation?</span>
-            <p>Send a request and get a free quote for any shipment type!</p>
-            <label for="name">Full Name</label>
-            <input id="name" type="text" name="name" required>
-
-            <label for="phone">Phone Number</label>
-            <input
-            id="phone"
-            type="tel"
-            name="phone"
-            placeholder="+1 (555) 123-4567"
-            required
-            >
-
-            <label for="email">Email Address</label>
-            <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-            >
-
-            <button>Request a quote</button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Industries We Serve</h2>
-        <article>
-            <h3>Manufacturing & Industrial Goods</h3>
-            <img src="/assets/industries/manufacturing-industrial-goods.webp" alt="manofacturing-industrial-goods">
-            <p>Transportation of non-hazardous industrial products, machinery components, and manufactured goods requiring reliable and secure dry van service.</p>
-        </article>
-    
-        <article>
-            <h3>Consumer & Retail Goods</h3>
-            <p>Nationwide transportation of packaged consumer goods, retail merchandise, and general freight for distribution centers and stores.</p>
-        </article>
-
-        <article>
-            <h3>Food & Beverage (Dry / Shelf-Stable Only)</h3>
-            <p>Transportation of packaged, shelf-stable food and beverage products that do not require temperature control, handled with care and compliance throughout transit.</p>
-        </article>
-
-        <article>
-            <h3>Automotive Components</h3>
-            <p>Safe and dependable transport of automotive parts and components supporting manufacturing and supply chain operations.</p>
-        </article>
-
-        <article>
-            <h3>Electronics & Technology</h3>
-            <p>Secure transportation of electronic equipment, components, and technology products requiring careful handling and timely delivery.</p>
-        </article>
-        <article>
-            <h3>Plastics & Chemicals (Non-Hazardous Only)</h3>
-            <p>Reliable dry van transportation of non-hazardous plastics, resins, and chemical products, moved in compliance with safety and handling requirements.</p>
-        </article>
-
-        <button>View al industries</button>
-
-    </section>
-
-    <section>
-        <h2>Transportation Service</h2>
-        <article>
-            <img src="car.png" alt="car">
-            <h3>Door to Door</h3>
-            <p>Nationwide direct freight transportation utilizing 53-foot dry van for general, non-hazardous freight, focused on safety, compliance, and reliability.</p>
-        </article>
-
-        <a href="/services" class="btn">Learn more</a>
-    </section>
-
-    <section>
-        <h2>Ask Our Experts About Your Freight</h2>
-        <p>Our experts are always ready to help. Get in touch with us and we'll find the right solution to meet your needs.</p>
-        <a href="/contact" class="btn">Request a quote</a>
-    </section>
-
-    <section>
-        <h2>About Us</h2>
-        <p>RIMEX Carriers is a professional ground transportation company based in Laredo, Texas, providing nationwide dry van freight services throughout the United States. Operating under the RIMEX Carriers name since 2024, our team brings more than a decade of experience delivering transportation solutions across the country. Our operation is built on reliability, punctuality, and a strong commitment to customer service, with a focus on safe, compliant operations and clear communication to ensure consistent, dependable service from origin to destination.</p>
-        <img src="x.png" alt="x">
-         <a href="/about-us" class="btn">More about us</a>
-        
-    </section>
-
-    <section>
-        <h2>Our Clients</h2>
-        <ul class="clients">
-    <li><img src="client1.png" alt="Logistics client partner"></li>
-    <li><img src="client2.png" alt="Retail distribution client"></li>
-    <li><img src="client3.png" alt="Manufacturing industry client"></li>
-  </ul>
-    </section>
-
-    <section>
-        <h2>Join our team</h2>
-        <p>Our company is always looking for experienced people who want to become part of our team. We are truly dedicated to safety, exceptional service, and satisfaction. So make a wise choice!</p>
-        <a href="/careers" class="btn">View open positions</a>
-    </section>
-
-
-   <section>
-  <h2>Contact RIMEX Carriers</h2>
-
-  <div id="map">Google Maps</div>
-
-  <address>
-    <strong>RIMEX Carriers</strong><br>
-    903 Crestview Dr<br>
-    Laredo, TX 78045<br>
-
-    <a href="tel:+19569779911">+1 (956) 977-9911</a><br>
-    <a href="mailto:acrozz@email.com">acrozz@email.com</a>
-  </address>
-
-  <div class="social-networks">
-    <!-- social links -->
-  </div>
-</section>
-
-    <section>
-        <h2>Get in Touch Now!</h2>
-        <form action="">
-            <h3>Need a reliable transportation?</h3>
-            <p>Send a request and get a free quote for any shipment type!</p>
-            <label for="name">Full Name</label>
-            <input id="name" type="text" name="name" required>
-
-            <label for="phone">Phone Number</label>
-            <input
-            id="phone"
-            type="tel"
-            name="phone"
-            placeholder="+1 (555) 123-4567"
-            required
-            >
-
-            <label for="email">Email Address</label>
-            <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-            >
-
-            <button>Request a quote</button>
-        </form>
-
-    </section>
-
-    <footer>
-  <p class="footer-logo">
-    <strong>RIMEX</strong> Carriers
-  </p>
-
-  <nav aria-label="Footer navigation">
-    <a href="/industries">Industries</a>
-    <a href="/services">Services</a>
-    <a href="/about-us">About Us</a>
-    <a href="/coverage">Coverage</a>
-    <a href="/careers">Careers</a>
-    <a href="/contact">Contact</a>
+      </div>
+    </div>
   </nav>
-</footer>
-    
+</header>
+
+
+    <h2 data-i18n="welcome">Esta es nuestra pagina principal</h2>
+
 </body>
+
 </html>

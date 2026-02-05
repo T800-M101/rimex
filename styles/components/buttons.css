@@ -1,0 +1,18 @@
+.links a.btn, 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--white);
+    font-family: var(--font-accent);
+    font-size: var(--fs-small); /* Esto fuerza el 1.2rem */
+    transition: var(--transition-fast);
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 96.59px;
+    height: 32.59px;
+    padding: 0 12px;
+}
+
