@@ -7,12 +7,54 @@
     border-radius: var(--border-radius);
     color: var(--white);
     font-family: var(--font-accent);
-    font-size: var(--fs-small); /* Esto fuerza el 1.2rem */
+    font-size: var(--fs-small);
     transition: var(--transition-fast);
     cursor: pointer;
     text-decoration: none;
     min-width: 96.59px;
     height: 32.59px;
     padding: 0 12px;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ripple effect */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.btn:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.btn:active {
+    transform: translateY(1px);
 }
 

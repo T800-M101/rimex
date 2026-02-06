@@ -1,4 +1,3 @@
-// main.js - Main application logic with comments
 document.addEventListener("DOMContentLoaded", () => {
   // ===== DOM Elements =====
   // Language toggle switch and label
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = form.querySelector(".btn");
 
   // ===== Form Validation =====
-  // Remove error styling when user starts typing in any field
   inputs.forEach((input) => {
     input.addEventListener("input", () => {
       if (input.value.trim() !== "") {
@@ -20,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
- // Handle form submission
+  // Handle form submission
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Detenemos el envío real para manejar los datos
-    
-    let emptyInputs = []; 
+    e.preventDefault();
+
+    let emptyInputs = [];
 
     inputs.forEach((input) => {
       if (input.value.trim() === "") {
@@ -33,33 +31,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (emptyInputs.length > 0) {
-      // Lógica de error que ya tienes...
       emptyInputs.forEach((input) => {
         input.classList.remove("shake-error");
-        void input.offsetWidth; 
+        void input.offsetWidth;
         input.classList.add("shake-error");
       });
       emptyInputs[0].focus();
     } else {
       // ===== CAPTURA DE VALORES =====
-      
-      // Opción A: Usando FormData (La más profesional y rápida)
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
-      
-      console.log("¡Formulario válido! Datos capturados:", data);
-      form.reset(); // Limpia el formulario tras el envío
+      form.reset();
     }
   });
 
   // ===== Language Management =====
-  // Function to update all translatable elements
   function setLanguage(lang) {
-    // Select all elements with data-i18n attribute
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
 
-      // Update text if translation exists for this key
       if (
         window.TRANSLATIONS &&
         window.TRANSLATIONS[lang] &&
@@ -69,6 +59,22 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         console.warn(
           `Translation not found for key: "${key}" in language: "${lang}"`,
+        );
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      const key = el.getAttribute("data-i18n-placeholder");
+
+      if (
+        window.TRANSLATIONS &&
+        window.TRANSLATIONS[lang] &&
+        window.TRANSLATIONS[lang][key]
+      ) {
+        el.placeholder = window.TRANSLATIONS[lang][key];
+      } else {
+        console.warn(
+          `Placeholder translation not found for key: "${key}" in language: "${lang}"`,
         );
       }
     });
@@ -93,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error(
       "Translations not loaded! Check if translations.js is included before main.js",
     );
-    // You could add a fallback here if needed
   }
 
   // Set initial language from localStorage or default to English

@@ -42,7 +42,7 @@
                 <a href="/contact" data-i18n="contact"></a>
 
                 <div class="header-actions">
-                    <a href="/get-quote" class="btn" data-i18n="getQuote"></a>
+                    <a href="/get-quote" class="btn" id="quote" data-i18n="getQuote"></a>
 
                     <div class="language-switch">
                         <label class="switch">
@@ -72,7 +72,8 @@
                 <input type="text" name="fullName" required>
 
                 <label for="tel" data-i18n="phone"></label>
-                <input type="tel" id="tel" name="phoneNumber" required>
+                <input type="tel" id="tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
+  placeholder="" required>
 
                 <label for="email" data-i18n="email"></label>
                 <input type="email" id="email" name="email" required>

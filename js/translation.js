@@ -17,7 +17,8 @@ window.TRANSLATIONS = {
     invitation: "Send a request and get a free quote for any shipment type!",
     name: "Name*",
     phone: "Phone*",
-    email: "Email*"
+    email: "Email*",
+    phonePlaceholder: "e.g. (555) 123-4567"
   },
   es: {
     langLabel: "ES",
@@ -36,6 +37,7 @@ window.TRANSLATIONS = {
     invitation: "¡Envía una solicitud y obten una cotización gratis para cualquier tipo de envío!",
     name: "Nombre*",
     phone: "Teléfono*",
-    email: "Correo eléctronico*"
+    email: "Correo electrónico*",
+    phonePlaceholder: "ej. (55) 1234-5678"
   }
 };
