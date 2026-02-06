@@ -24,7 +24,7 @@
 <script src="js/script.js"></script>
 
 <body>
-<!-- MAIN MENU -->
+    <!-- MAIN MENU -->
     <header>
         <nav class="main-menu">
             <h1 data-i18n="company"></h1>
@@ -55,35 +55,42 @@
             </div>
         </nav>
     </header>
-<!-- MAIN MENU END-->
+    <!-- MAIN MENU END-->
 
-<!-- DELIVER SECTION-->
-<section class="container">
-    <div class="deliver-container">
-        <div class="deliver-text">
-            <h2 data-i18n="deliverMission"></h2>
-            <p data-i18n="deliverDesc"></p>
+    <!-- DELIVER SECTION-->
+    <section class="container">
+        <div class="deliver-container">
+            <div class="deliver-text">
+                <h2 data-i18n="deliverMission"></h2>
+                <p data-i18n="deliverDesc"></p>
+            </div>
+            <div class="form-container">
+                <form id="quoteForm" action="">
+                    <h3 data-i18n="offer"></h3>
+                    <p data-i18n="invitation"></p>
+
+                    <!-- Full name -->
+                    <label for="name" data-i18n="name"></label>
+                    <input type="text" id="name" name="fullName" required>
+                    <span class="error-message" id="nameError" style="display: none;"></span>
+
+                    <!-- Phone number -->
+                    <label for="tel" data-i18n="phone"></label>
+                    <input type="tel" id="tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
+                        placeholder="" required>
+                    <span class="error-message" id="phoneError" style="display: none;"></span>
+
+                    <!-- Email -->
+                    <label for="email" data-i18n="email"></label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError" style="display: none;"></span>
+
+                    <button type="submit" class="btn" data-i18n="quote"></button>
+                </form>
+            </div>
         </div>
-        <div class="form-container">
-            <form action="">
-                <h3 data-i18n="offer"></h3>
-                <p data-i18n="invitation"> </p>
-                <label for="name" id="name" data-i18n="name"></label>
-                <input type="text" name="fullName" required>
-
-                <label for="tel" data-i18n="phone"></label>
-                <input type="tel" id="tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
-  placeholder="" required>
-
-                <label for="email" data-i18n="email"></label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit" class="btn" data-i18n="quote"></button>
-            </form>
-        </div>
-    </div>
-</section>
-<!-- DELIVER SECTION END-->
+    </section>
+    <!-- DELIVER SECTION END-->
 
 </body>
 
