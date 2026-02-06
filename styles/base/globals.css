@@ -12,12 +12,26 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    color: #434343;
-    background-color: #d4d4d4;
+    color: var(--neutral);
+    background-color: var(--primary-color);
     margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--links);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    color: var(--blue);
+}
+
+h2 {
+    color: var(--blue);
+}
+
+p {
+    color: var(--neutral);
 }

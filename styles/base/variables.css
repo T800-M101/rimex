@@ -1,10 +1,15 @@
 :root {
     /* --- Paleta de Colores --- */
-    --primary-color: #434343;       /* Gris oscuro (tu color base) */
-    --secondary-color: #d4d4d4;     /* Gris claro (212, 212, 212) */
-    --accent-color: #007bff;        /* Color de realce (puedes cambiarlo luego) */
+    --primary-color: #f5f7fa;       
+    --secondary-color: #d4d4d4;     
+    --accent-color: #b0c60d;;        
     --white: #ffffff;
     --black: #000000;
+    --blue:#1c85c6;
+    --hover-green: #b0c60d;
+    --neutral: #565c70;
+    --links: #565c70;
+    --hover-active:#1c85c6;
     
     /* --- Colores de Texto --- */
     --text-main: #434343;

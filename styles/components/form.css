@@ -68,7 +68,7 @@
  form input {
      height: 40px;
      border: none;
-     background-color: #e7e7e7;
+     background-color: var(--primary-color);
      border-radius: 3px;
      padding-left: 12px;
      transition: border 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
@@ -86,7 +86,6 @@
  form input:focus {
      outline: none;
      border: 2px solid #434343;
-     box-shadow: 0 0 5px rgba(67, 67, 67, 0.5);
      background-color: #fff;
  }
 
@@ -96,7 +95,6 @@
      background-color: rgba(231, 76, 60, 0.05) !important;
  }
 
- /* Estilos para mensajes de error */
  .error-message {
      display: none;
      color: #e74c3c;
@@ -111,17 +109,15 @@
  }
 
  input:valid {
-     border-color: #2ecc71 !important;
+     border-color: var(--hover-green) !important;
  }
 
- /* Estilo para inputs con error */
  input.error {
      border: 2px solid #e74c3c !important;
      background-color: rgba(231, 76, 60, 0.05);
      animation: shake 0.4s ease-in-out;
  }
 
- /* Mostrar mensaje de error cuando hay error */
  input.error+.error-message {
      display: block;
  }
@@ -134,10 +130,8 @@
      font-family: var(--font-primary);
      padding-left: 5px;
      display: none;
-     /* Oculto por defecto */
  }
 
- /* Mantén tu animación shake-error */
  @keyframes shake {
 
      0%,

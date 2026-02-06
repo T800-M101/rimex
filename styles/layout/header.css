@@ -1,34 +1,65 @@
+/* =========================
+   HEADER LAYOUT
+========================= */
+
 header {
-    background-color: #ffffff; 
-    width: 100%;               
-    height: 100px;            
+    background-color: var(--white);
+    width: 100%;
+    height: 100px;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
 }
 
 h1 {
     margin: 0;
     font-size: 3.5rem;
+    color: var(--blue);
 }
 
-.main-menu {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    width: 90%;               
-    max-width: 1200px;        
-}
+/* =========================
+   NAV LINKS
+========================= */
 
 .links {
     display: flex;
     align-items: center;
-    gap: 20px;                
+    gap: 20px;
 }
 
-.links a {
+/* Only normal nav links (NOT buttons) */
+.links a:not(.btn) {
+    position: relative;
     font-size: clamp(1.4rem, 1.2vw, 1.6rem);
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 0;
+    transition: color 0.3s ease;
 }
+
+
+/* Text color on hover */
+.links a:not(.btn):hover {
+    color: var(--hover-green);
+}
+
+/* Active link */
+.links a:not(.btn).active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* =========================
+   HEADER ACTIONS (BTN + LANG)
+========================= */
 
 .header-actions {
     display: flex;
@@ -36,42 +67,15 @@ h1 {
     gap: 16px;
 }
 
-/* Variante específica para el header */
+/* Button sizing specific to header */
 .links a.btn {
     min-width: 96.59px;
     height: 32.59px;
     padding: 0 12px;
 }
 
-.links a {
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    padding: 8px 0;
-    transition: color 0.3s ease;
-}
-
-.links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
-}
-
-.links a:hover::after,
-.links a.active::after {
-    width: 100%;
-}
-
-.links a:hover {
-    color: var(--primary-color);
-}
-
-.links a.active {
-    color: var(--primary-color);
-    font-weight: 600;
+/* Active state for header button */
+.links a.btn.active {
+    background-color: var(--hover-green);
+    color: var(--white);
 }

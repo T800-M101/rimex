@@ -1,6 +1,6 @@
 .hamburguer-menu {
     --x-width: calc(var(--hamburguer-height) * 1.414221356237);
-    display: none; /* Se activa en mobile.css */
+    display: none; 
     flex-direction: column;
     gap: var(--hamburguer-gap);
     width: max-content;
@@ -13,7 +13,7 @@
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
-    background-color: var(--primary-color); /* Cambiado de --foreground */
+    background-color: var(--blue);
     border-radius: 999px;
     transform-origin: left center;
     transition: opacity var(--animation-timing),
@@ -30,7 +30,7 @@
     pointer-events: none;
 }
 
-/* El selector :has debe apuntar al ID correcto del HTML */
+/* The selector :has should target the right ID in HTML */
 .hamburguer-menu:has(#menu-toggle:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
