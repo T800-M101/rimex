@@ -1,6 +1,7 @@
 
 window.TRANSLATIONS = {
   en: {
+    // HEADER
     langLabel: "EN",
     company: "RIMEX",
     home: "Home",
@@ -11,6 +12,8 @@ window.TRANSLATIONS = {
     contact: "Contact",
     getQuote: "Get a quote",
     quote: "Request a quote",
+
+    // FORM SECTION
     deliverMission: "Build to deliver",
     deliverDesc: "RIMEX Carriers is a Texas-based transportation company providing reliable nationwide dry van freight services across the United States",
     offer: "Need a reliable transportation?",
@@ -19,6 +22,8 @@ window.TRANSLATIONS = {
     phone: "Phone*",
     email: "Email*",
     phonePlaceholder: "e.g. (555) 123-4567",
+
+    // INDUSTRIES SECTION
     industriesTitle: "Industries We Serve",
     manofacturing: "Manufacturing & Industrial Goods",
     manofacturingText: "Transportation of non-hazardous industrial products, machinery components, and manufactured goods requiring reliable and secure dry van service.",
@@ -32,9 +37,16 @@ window.TRANSLATIONS = {
     electronicsText: "Secure transportation of electronic equipment, components, and technology products requiring careful handling and timely delivery.",
     plastics: "Plastics & Chemicals (Non-Hazardous Ony)",
     plasticsText: "Reliable dry van transportation of non-hazardous plastics, resins and chemical products, moved in compliance with safety and handling requirements.",
-    industriesBtn: "View All Industries"
+    industriesBtn: "View All Industries",
+
+    // TRANSPORTATION SECTION
+    transportationTitle: "Transportation Service",
+    doorToDoor: "Door to Door",
+    doorToDoorDesc: "Nationwide direct freight transportation utilizing 53-foot dry van for general, non-hazardous freight, focused on safety, compliance, and reliability."
+    
   },
   es: {
+    // HEADER
     langLabel: "ES",
     company: "RIMEX",
     home: "Inicio",
@@ -45,6 +57,8 @@ window.TRANSLATIONS = {
     contact: "Contacto",
     getQuote: "Cotiza",
     quote: "Solicita una cotización",
+
+    // FORM SEECTION
     deliverMission: "Nacidos para llegar",
     deliverDesc: "RIMEX Carriers es una empresa de transporte con sede en Texas que ofrece servicios confiables de carga en furgonetas secas en todo Estados Unidos.",
     offer: "¿Necesitas un transporte confiable?",
@@ -53,6 +67,8 @@ window.TRANSLATIONS = {
     phone: "Teléfono*",
     email: "Correo electrónico*",
     phonePlaceholder: "ej. (55) 1234-5678",
+
+    // INDUSTRIES SECTION
     industriesTitle: "Industrias a las que servimos",
     manofacturing: "Manufactura y bienes industriales",
     manofacturingText: "Transporte de productos industriales no peligrosos, componentes de maquinaria y bienes manufacturados que requieren un servicio de caja seca confiable y seguro.",
@@ -66,6 +82,12 @@ window.TRANSLATIONS = {
     electronicsText: "Transporte seguro de equipos electrónicos, componentes y productos tecnológicos que requieren un manejo cuidadoso y una entrega oportuna.",
     plastics: "Plásticos y productos químicos (solo no peligrosos)",
     plasticsText: "Transporte confiable en furgonetas secas de plásticos, resinas y productos químicos no peligrosos, trasladados cumpliendo con los requisitos de seguridad y manipulación.",
-    industriesBtn: "Ver todas las industrias"
+    industriesBtn: "Ver todas las industrias",
+
+    // TRANSPORTATION SECTION
+    transportationTitle: "Servicio de transporte",
+    doorToDoor: "Servicios puerta a puerta",
+    doorToDoorDesc: "Transporte directo de carga a nivel nacional utilizando furgones secos de 53 pies para carga general, no peligrosa, centrados en la seguridad, el cumplimiento y la confiabilidad.",
+    
   }
 };

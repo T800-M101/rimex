@@ -12,9 +12,11 @@
 <link rel="stylesheet" href="styles/components/hamburguer.css">
 <link rel="stylesheet" href="styles/components/language-switch.css">
 <link rel="stylesheet" href="styles/components/buttons.css">
-<link rel="stylesheet" href="styles/layout/deliver-section.css">
+<link rel="stylesheet" href="styles/layout/industries-section.css">
+<link rel="stylesheet" href="styles/layout/form-section.css">
+<link rel="stylesheet" href="styles/layout/transportation-section.css">
 <link rel="stylesheet" href="styles/responsive/mobile.css">
-<link rel="stylesheet" href="styles/styles.css">
+<!-- <link rel="stylesheet" href="styles/styles.css"> -->
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +30,10 @@
     <!-- MAIN MENU -->
     <header>
         <nav class="main-menu">
-            <h1 data-i18n="company"></h1>
+            <!-- <h1 data-i18n="company"></h1> -->
+            <a href="#">
+                <img src="/assets/home/logo.webp" alt="RIMEX Carriers Logo">
+            </a>
 
             <label class="hamburguer-menu" for="menu-toggle">
                 <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
@@ -58,7 +63,7 @@
     </header>
     <!-- MAIN MENU END-->
 
-    <!-- DELIVER SECTION-->
+    <!-- FORM SECTION-->
     <section class="section-wrapper bg-alt">
         <div class="deliver-container inner-content">
             <div class="deliver-text">
@@ -91,9 +96,9 @@
             </div>
         </div>
     </section>
-    <!-- DELIVER SECTION END-->
+    <!-- FORM SECTION END-->
 
-    <!-- INDUSTRIES -->
+    <!-- INDUSTRIES SECTION-->
     <section class="section-wrapper bg-white">
         <div class="industries-container inner-content">
 
@@ -155,7 +160,29 @@
 
         </div>
     </section>
-    <!-- INDUSTRIES END -->
+    <!-- INDUSTRIES SECTION END -->
+
+    <!-- TRANSPORTATION SECTION -->
+    <section class="section-wrapper bg-white">
+        <div class="transportation-container inner-content">
+            <h2 class="section-title" data-i18n="transportationTitle">Transportation Service</h2>
+
+            <div class="transportation-card">
+                <div class="transportation-image">
+                    <img src="assets/services/power-units.webp" alt="dry-ban-unit">
+                </div>
+                <div class="transportation-info">
+                    <h3 data-i18n="doorToDoor">Door to Door</h3>
+                    <p data-i18n="doorToDoorDesc">
+                        Nationwide direct freight transportation utilizing 53-foot dry van for general,
+                        non-hazardous freight, focused on safety, compliance, and reliability.
+                    </p>
+                    <span class="accent-line"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TRANSPORTATION SECTION END-->
 
 </body>
 
