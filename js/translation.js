@@ -48,6 +48,11 @@ window.TRANSLATIONS = {
     // EXPERTS SECTION
     expertsTitle: "Ask Our Experts About Your Freight",
     expertsDesc: "Our experts are always ready to help. Get in touch with us and we'll find the right solution to meet your needs.",
+
+    // ABOUT SECTION
+    aboutTitle: "About Us",
+    aboutText: "RIMEX Carriers is a professional ground transportation company based in Laredo, Texas, providing nationwide dry van freight services throughout the United States. Operating under the RIMEX Carriers name since 2024, our team brings more than a decade of experience delivering transportation solutions across the country. Our operation is built on reliability, punctuality, and a strong commitment to customer service, with a focus on safe, compliant operations and clear communication to ensure consistent, dependable service from origin to destination.",
+    aboutBtn: "More about us",
     
   },
   es: {
@@ -98,6 +103,11 @@ window.TRANSLATIONS = {
     // EXPERTS SECTION
     expertsTitle: "Pregunta a nuestros expertos sobre tu carga",
     expertsDesc: "Nuestros expertos siempre están listos para ayudarte. Contáctanos y encontraremos la solución perfecta para tus necesidades.",
+
+    // ABOUT SECTION
+    aboutTitle: "Sobre nosotros",
+    aboutText: "RIMEX Carriers es una empresa profesional de transporte terrestre con sede en Laredo, Texas, que ofrece servicios de carga en furgonetas secas a nivel nacional en todo Estados Unidos. Operando bajo el nombre de RIMEX Carriers desde 2024, nuestro equipo cuenta con más de una década de experiencia brindando soluciones de transporte en todo el país. Nuestras operaciones se basan en la confiabilidad, la puntualidad y un firme compromiso con el servicio al cliente, con un enfoque en operaciones seguras y conformes, y una comunicación clara para garantizar un servicio consistente y confiable desde el origen hasta el destino.",
+    aboutBtn: "Más sobre nosotros",
     
   }
 };
