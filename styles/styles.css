@@ -49,6 +49,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -868,7 +869,6 @@ input.error+.error-message {
    CONTACT SECTION - MAP
 ========================= */
 
-/* CONTACT SECTION */
 .contact-main-title {
     color: var(--blue);
     text-align: center;
@@ -990,13 +990,12 @@ input.error+.error-message {
 .get-in-touch label {
     text-align: left;
 }
-/* Center the form container */
+
 .form-center {
     margin: 0 auto;
     max-width: 600px; 
 }
 
-/* Style for textarea */
 textarea {
     width: 100%;
     padding: 12px;
@@ -1033,7 +1032,7 @@ textarea.error {
     border-radius: 3px;
     padding: 12px;
     font-family: inherit;
-    resize: vertical; /* Permite estirar hacia abajo pero no hacia los lados */
+    resize: vertical; 
     transition: all 0.2s ease;
 }
 
@@ -1043,12 +1042,70 @@ textarea.error {
     background-color: #fff;
 }
 
-
-
-
 /* =========================
    FOOTER
 ========================= */
+footer.section-wrapper {
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section h2 {
+    font-family: var(--font-main);
+    color: var(--blue);
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.footer-section span {
+    font-family: var(--font-main);
+    font-size: 1.4rem;
+    color: var(--hover-green); 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.footer-nav .footer-links {
+    display: flex;
+    gap: 25px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav .footer-links a {
+    text-decoration: none;
+    color: var(--neutral);
+    font-size: 1.6rem;
+    transition: color var(--transition-fast);
+    transition: color var(--transition-fast), transform 0.2s ease; 
+    display: inline-block;
+}
+
+.footer-nav .footer-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
 
 
 /* ============================================================
@@ -1412,6 +1469,26 @@ textarea.error {
         max-width: 100% !important;
         box-sizing: border-box;
     }
+
+   
+   /* =========================
+        FOOTER
+    ========================= */ 
+   .footer-section {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        align-items: center;
+    }
+
+    .footer-nav .footer-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
 }
 
 
@@ -1422,7 +1499,6 @@ textarea.error {
         min-height: 476px;
     }
 
-    /* CONTACT */
     .contact {
         padding: 40px 20px;
     }
@@ -1463,7 +1539,9 @@ textarea.error {
         font-size: 1.6rem;
     }
 
-    /* CONTACT */
+   /* =========================
+        CONTACT SECTION
+    ========================= */ 
     .contact-main-title {
         font-size: 2.4rem;
         margin-bottom: 30px;
