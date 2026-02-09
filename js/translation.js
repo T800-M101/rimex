@@ -65,10 +65,17 @@ window.TRANSLATIONS = {
     rimexCarriers: "RIMEX Carriers",
     location: "Location",
     locationData: "903 CRESTVIEW DR LAREDO, TX 78045",
-    phone: "Phone",
+    contactPhone: "Phone",
     phoneData: "+1 (956) 977-9911",
-    email: "Email",
-    emailData: "rimexcarriers@gmail.com"
+    contactEmail: "Email",
+    emailData: "rimexcarriers@gmail.com",
+
+    // GET IN TOUCH
+    getInTouchTitle: "Get in Touch Now!",
+    contactInvitation: "Send us a message and we'll get back to you as soon as possible.",
+    messageLabel: "Message",
+    sendMessage: "Send",
+    messagePlacehoder: "Tell us about your freight needs...",
     
   },
   es: {
@@ -136,10 +143,18 @@ window.TRANSLATIONS = {
     rimexCarriers: "RIMEX Carriers",
     location: "Dirección",
     locationData: "903 CRESTVIEW DR LAREDO, TX 78045",
-    phone: "Teléfono",
+    contactPhone: "Teléfono",
     phoneData: "+1 (956) 977-9911",
-    email: "Correo electrónico",
+    contactEmail: "Correo electrónico",
     emailData: "rimexcarriers@gmail.com",
-    
+
+    // GET IN TOUCH
+    getInTouchTitle: "¡Contáctanos Ahora!",
+    contactInvitation: "Envíanos un mensaje y nos pondremos en contacto contigo lo antes posible.",
+    messageLabel: "Mensaje",
+    sendMessage: "Enviar",
+    messagePlacehoder: "Cuéntenos sobre tus necesidades de transporte...",
   }
+    
+  
 };

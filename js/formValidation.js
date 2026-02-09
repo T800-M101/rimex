@@ -1,82 +1,92 @@
 export function initFormValidation() {
-  const form = document.getElementById("quoteForm") || document.querySelector("form");
-  const nameInput = document.getElementById("name");
-  const phoneInput = document.getElementById("tel");
-  const emailInput = document.getElementById("email");
+    const forms = [
+        {
+            form: document.getElementById("quoteForm"),
+            fields: {
+                name: "name",
+                tel: "tel",
+                email: "email",
+                errorSuffix: "Error" 
+            }
+        },
+        {
+            form: document.getElementById("contactForm"),
+            fields: {
+                name: "contact-name",
+                tel: "contact-tel",
+                email: "contact-email",
+                message: "message",
+                errorSuffix: "Error" 
+            }
+        }
+    ];
 
-  const nameError = document.getElementById("nameError");
-  const phoneError = document.getElementById("phoneError");
-  const emailError = document.getElementById("emailError");
+    forms.forEach(config => {
+        const formEl = config.form;
+        if (!formEl) return;
 
-  if (!form) return;
+        const elements = {
+            name: document.getElementById(config.fields.name),
+            tel: document.getElementById(config.fields.tel),
+            email: document.getElementById(config.fields.email),
+            message: document.getElementById(config.fields.message)
+        };
 
-  // Input listeners
-  if (nameInput) {
-    nameInput.addEventListener("input", () => {
-      nameInput.value = nameInput.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, "");
-      nameInput.classList.remove("shake-error");
-      if (nameError) nameError.style.display = "none";
+        if (elements.name) {
+            elements.name.addEventListener("input", () => {
+                elements.name.value = elements.name.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, "");
+                clearValidationError(elements.name);
+            });
+        }
+
+        if (elements.tel) {
+            elements.tel.addEventListener("input", () => {
+                elements.tel.value = elements.tel.value.replace(/\D/g, "");
+                clearValidationError(elements.tel);
+            });
+        }
+
+        if (elements.email) {
+            elements.email.addEventListener("input", () => clearValidationError(elements.email));
+        }
+
+        formEl.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            if (!validateField(elements.name, /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,50}$/, "Name is required (min 2 chars)")) isValid = false;
+            
+            if (!validateField(elements.tel, /^\d{10,}$/, "Valid phone is required (10 digits)")) isValid = false;
+
+            if (!validateField(elements.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email format")) isValid = false;
+
+            if (isValid) {
+                alert("Success! We will contact you soon.");
+                formEl.reset();
+            }
+        });
     });
-  }
+}
 
-  if (phoneInput) {
-    phoneInput.addEventListener("input", () => {
-      phoneInput.value = phoneInput.value.replace(/[a-zA-Z]/g, "");
-      phoneInput.classList.remove("shake-error");
-      if (phoneError) phoneError.style.display = "none";
-    });
-  }
-
-  if (emailInput) {
-    emailInput.addEventListener("input", () => {
-      emailInput.classList.remove("shake-error");
-      if (emailError) emailError.style.display = "none";
-    });
-  }
-
-  function showValidationError(input, errorElement, message) {
-    input.classList.add("shake-error");
-    if (errorElement) {
-      errorElement.textContent = message;
-      errorElement.style.display = "block";
-    }
-  }
-
-  // Example simplified validation (you can keep your full logic)
-  function validateName() {
-    if (!nameInput) return true;
-    if (nameInput.value.trim().length < 2) {
-      showValidationError(nameInput, nameError, "Name is required");
-      return false;
+function validateField(input, regex, message) {
+    if (!input) return true; 
+    const errorEl = input.nextElementSibling; 
+    
+    if (!regex.test(input.value.trim())) {
+        input.classList.add("shake-error");
+        if (errorEl && errorEl.classList.contains("error-message")) {
+            errorEl.textContent = message;
+            errorEl.style.display = "block";
+        }
+        return false;
     }
     return true;
-  }
+}
 
-  function validatePhone() {
-    if (!phoneInput) return true;
-    if (phoneInput.value.trim().length < 10) {
-      showValidationError(phoneInput, phoneError, "Phone is required");
-      return false;
+function clearValidationError(input) {
+    input.classList.remove("shake-error");
+    const errorEl = input.nextElementSibling;
+    if (errorEl && errorEl.classList.contains("error-message")) {
+        errorEl.style.display = "none";
     }
-    return true;
-  }
-
-  function validateEmail() {
-    if (!emailInput) return true;
-    if (!emailInput.value.includes("@")) {
-      showValidationError(emailInput, emailError, "Email is required");
-      return false;
-    }
-    return true;
-  }
-
-  // Form submit
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const valid = validateName() && validatePhone() && validateEmail();
-    if (valid) {
-      alert("Form is valid! Submit logic here.");
-      form.reset();
-    }
-  });
 }

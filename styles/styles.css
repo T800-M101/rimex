@@ -939,7 +939,7 @@ input.error+.error-message {
 }
 
 /* =========================
-   GET IN TOUCH SECTION
+   SOCIAL NETWORK SECTION
 ========================= */
 .social-links {
     display: flex;
@@ -978,6 +978,71 @@ input.error+.error-message {
     fill: #ffffff;
     stroke: #ffffff;
 }
+
+/* =========================
+   GET IN TOUCH SECTION
+========================= */
+.get-in-touch {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.get-in-touch label {
+    text-align: left;
+}
+/* Center the form container */
+.form-center {
+    margin: 0 auto;
+    max-width: 600px; 
+}
+
+/* Style for textarea */
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    font-family: var(--font-accent);
+    font-size: 1.4rem;
+    resize: vertical;
+    min-height: 120px;
+    transition: border 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #434343;
+    background-color: #fff;
+}
+
+textarea.error {
+    border: 2px solid #e74c3c !important;
+    background-color: rgba(231, 76, 60, 0.05);
+    animation: shake 0.4s ease-in-out;
+}
+
+#contactForm {
+    margin-top: 20px;
+}
+
+#contactForm textarea {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    font-family: inherit;
+    resize: vertical; /* Permite estirar hacia abajo pero no hacia los lados */
+    transition: all 0.2s ease;
+}
+
+#contactForm textarea:focus {
+    outline: none;
+    border: 2px solid #434343;
+    background-color: #fff;
+}
+
 
 
 
@@ -1318,6 +1383,34 @@ input.error+.error-message {
     .social-icon:active svg {
         fill: white;
         stroke: white;
+    }
+
+    /* =========================
+        GET IN TOUCH SECTION
+    ========================= */        
+     .form-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    
+    #quoteForm,
+    #contactForm {
+        width: 100%;
+        padding: 24px 18px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    form input,
+    form textarea,
+    form label,
+    form .btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
     }
 }
 

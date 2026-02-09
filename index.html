@@ -30,7 +30,7 @@
             </label>
 
             <div class="links">
-                <a href="" data-i18n="home"></a>
+                <a href="#" data-i18n="home"></a>
                 <a href="#services" data-i18n="services"></a>
                 <a href="#about" data-i18n="about"></a>
                 <a href="#coverage" data-i18n="coverage"></a>
@@ -88,7 +88,7 @@
     </section>
     <!-- FORM SECTION END-->
 
-    <!-- INDUSTRIES SECTION-->
+    <!-- SERVICES SECTION-->
     <section class="section-wrapper bg-white" id="services">
         <div class="industries-container inner-content">
 
@@ -150,7 +150,7 @@
 
         </div>
     </section>
-    <!-- INDUSTRIES SECTION END -->
+    <!-- SERVICES SECTION END -->
 
     <!-- TRANSPORTATION SECTION -->
     <section class="section-wrapper bg-white">
@@ -212,7 +212,7 @@
 
     <!-- COVERAGE SECTION -->
 
-    <section class="section-wrapper bg-white">
+    <section class="section-wrapper bg-white" id="coverage">
         <div class="clients inner-content">
             <h2 class="section-title" data-i18n="clientsTitle"></h2>
             <div class="clients-container">
@@ -270,11 +270,11 @@
                         <p data-i18n="locationData"></p>
                     </div>
                     <div class="info-item">
-                        <span data-i18n="phone"></span>
+                        <span data-i18n="contactPhone"></span>
                         <p data-i18n="phoneData"></p>
                     </div>
                     <div class="info-item">
-                        <span data-i18n="email"></span>
+                        <span data-i18n="contactEmail"></span>
                         <p data-i18n="emailData"></p>
                     </div>
 
@@ -307,6 +307,41 @@
         </div>
     </section>
     <!-- CONTACT SECTION END-->
+
+    <!-- GET IN TOUCH SECTION -->
+    <section class="section-wrapper bg-alt" id="get-in-touch">
+        <div class="get-in-touch inner-content">
+            <div class="form-container form-center">
+                <form id="contactForm" action="">
+                    <h2 class="section-title" data-i18n="getInTouchTitle">Get in Touch Now!</h2>
+
+                    <!-- Full name -->
+                    <label for="contact-name" data-i18n="name"></label>
+                    <input type="text" id="contact-name" name="fullName" required>
+                    <span class="error-message" id="contactNameError" style="display: none;"></span>
+
+                    <!-- Phone number -->
+                    <label for="contact-tel" data-i18n="phone"></label>
+                    <input type="tel" id="contact-tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
+                        placeholder="" required>
+                    <span class="error-message" id="contactPhoneError" style="display: none;"></span>
+
+                    <!-- Email -->
+                    <label for="contact-email" data-i18n="email"></label>
+                    <input type="email" id="contact-email" name="email" required>
+                    <span class="error-message" id="contactEmailError" style="display: none;"></span>
+
+                    <!-- Message (optional additional field) -->
+                    <label for="message" data-i18n="messageLabel"></label>
+                    <textarea id="message" name="message" rows="4" data-i18n-placeholder="messagePlacehoder"></textarea>
+                    <span class="error-message" id="messageError" style="display: none;"></span>
+
+                    <button type="submit" class="btn btn-primary" data-i18n="sendMessage">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- GET IN TOUCH SECTION END-->
 
 </body>
 
