@@ -44,6 +44,10 @@ window.TRANSLATIONS = {
     doorToDoor: "Door to Door",
     doorToDoorDesc: "Nationwide direct freight transportation utilizing 53-foot dry van for general, non-hazardous freight, focused on safety, compliance, and reliability.",
     learnMoreBtn: "Learn more",
+
+    // EXPERTS SECTION
+    expertsTitle: "Ask Our Experts About Your Freight",
+    expertsDesc: "Our experts are always ready to help. Get in touch with us and we'll find the right solution to meet your needs.",
     
   },
   es: {
@@ -90,6 +94,10 @@ window.TRANSLATIONS = {
     doorToDoor: "Servicios puerta a puerta",
     doorToDoorDesc: "Transporte directo de carga a nivel nacional utilizando furgones secos de 53 pies para carga general, no peligrosa, centrados en la seguridad, el cumplimiento y la confiabilidad.",
     learnMoreBtn: "Más información",
+
+    // EXPERTS SECTION
+    expertsTitle: "Pregunta a nuestros expertos sobre tu carga",
+    expertsDesc: "Nuestros expertos siempre están listos para ayudarte. Contáctanos y encontraremos la solución perfecta para tus necesidades.",
     
   }
 };

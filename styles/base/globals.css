@@ -1,4 +1,4 @@
-html {
+/* html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -40,12 +40,15 @@ h3 {
 
 p {
     color: var(--neutral);
+    font-size: 2rem;
 }
 
 .section-wrapper {
-    width: 100vw;
     display: flex;
+    width: 100vw;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 .bg-alt {
@@ -56,4 +59,4 @@ p {
     width: 90%;
     max-width: 1200px;
     padding: 80px 0;
-}
+} */

@@ -6,17 +6,7 @@
 <meta name="description"
     content="RIMEX Carriers is a Texas-based transportation company offering reliable nationwide dry van freight services across the United States. Get a free quote today.">
 <link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/base/variables.css">
-<link rel="stylesheet" href="styles/base/globals.css">
-<link rel="stylesheet" href="styles/layout/header.css">
-<link rel="stylesheet" href="styles/components/hamburguer.css">
-<link rel="stylesheet" href="styles/components/language-switch.css">
-<link rel="stylesheet" href="styles/components/buttons.css">
-<link rel="stylesheet" href="styles/layout/industries-section.css">
-<link rel="stylesheet" href="styles/layout/form-section.css">
-<link rel="stylesheet" href="styles/layout/transportation-section.css">
-<link rel="stylesheet" href="styles/responsive/mobile.css">
-<!-- <link rel="stylesheet" href="styles/styles.css"> -->
+<link rel="stylesheet" href="styles/styles.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +31,14 @@
 
             <div class="links">
                 <a href="" data-i18n="home"></a>
-                <a href="/services" data-i18n="services"></a>
-                <a href="/about" data-i18n="about"></a>
-                <a href="/coverage" data-i18n="coverage"></a>
-                <a href="careers" data-i18n="careers"></a>
-                <a href="/contact" data-i18n="contact"></a>
+                <a href="#services" data-i18n="services"></a>
+                <a href="#about" data-i18n="about"></a>
+                <a href="#coverage" data-i18n="coverage"></a>
+                <a href="#careers" data-i18n="careers"></a>
+                <a href="#contact" data-i18n="contact"></a>
 
                 <div class="header-actions">
-                    <a href="/get-quote" class="btn" id="quote" data-i18n="getQuote"></a>
+                    <a href="/get-quote" class="btn btn-primary" id="quote" data-i18n="getQuote"></a>
 
                     <div class="language-switch">
                         <label class="switch">
@@ -67,7 +57,7 @@
     <section class="section-wrapper bg-alt">
         <div class="deliver-container inner-content">
             <div class="deliver-text">
-                <h2 data-i18n="deliverMission"></h2>
+                <h1 data-i18n="deliverMission"></h1>
                 <p data-i18n="deliverDesc"></p>
             </div>
             <div class="form-container">
@@ -91,7 +81,7 @@
                     <input type="email" id="email" name="email" required>
                     <span class="error-message" id="emailError" style="display: none;"></span>
 
-                    <button type="submit" class="btn" data-i18n="quote"></button>
+                    <button type="submit" class="btn btn-primary" data-i18n="quote"></button>
                 </form>
             </div>
         </div>
@@ -99,10 +89,10 @@
     <!-- FORM SECTION END-->
 
     <!-- INDUSTRIES SECTION-->
-    <section class="section-wrapper bg-white">
+    <section class="section-wrapper bg-white" id="services">
         <div class="industries-container inner-content">
 
-            <h2 class="section-title" data-i18n="industriesTitle">Industries We Serve</h2>
+            <h2 class="section-title" data-i18n="industriesTitle"></h2>
 
             <div class="industries-grid">
                 <article class="industry-card">
@@ -155,7 +145,7 @@
             </div>
 
             <div class="center-btn">
-                <button class="btn btn-outline" data-i18n="industriesBtn">View all industries</button>
+                <button class="btn btn-outline" data-i18n="industriesBtn"></button>
             </div>
 
         </div>
@@ -165,27 +155,66 @@
     <!-- TRANSPORTATION SECTION -->
     <section class="section-wrapper bg-white">
         <div class="transportation-container inner-content">
-            <h2 class="section-title" data-i18n="transportationTitle">Transportation Service</h2>
+            <h2 class="section-title" data-i18n="transportationTitle"></h2>
 
             <div class="transportation-card">
                 <div class="transportation-image">
                     <img src="assets/services/power-units.webp" alt="dry-ban-unit">
                 </div>
                 <div class="transportation-info">
-                    <h3 data-i18n="doorToDoor">Door to Door</h3>
+                    <h3 data-i18n="doorToDoor"></h3>
                     <p data-i18n="doorToDoorDesc">
-                        Nationwide direct freight transportation utilizing 53-foot dry van for general,
-                        non-hazardous freight, focused on safety, compliance, and reliability.
+                        
                     </p>
                     <span class="accent-line"></span>
                 </div>
             </div>
             <div class="transportation center-btn">
-                <button class="btn btn-outline" data-i18n="learnMoreBtn">Learn more</button>
+                <button class="btn btn-outline" data-i18n="learnMoreBtn"></button>
             </div>
         </div>
     </section>
     <!-- TRANSPORTATION SECTION END-->
+
+    <!-- EXPERTS SECTION -->
+    <section class="section-wrapper bg-alt">
+        <div class="experts-cta inner-content">
+            <h2 data-i18n="expertsTitle"></h2>
+
+            <p class="cta-description" data-i18n="expertsDesc">
+                
+            </p>
+
+            <div class="cta-actions center-btn">
+                <button class="btn btn-primary" data-i18n="quote"></button>
+            </div>
+        </div>
+    </section>
+    <!-- EXPERTS SECTION END-->
+
+    <!-- ABOUT SECTION -->
+     <section id="about">
+        <p>ABOUT SECTION</p>
+     </section>
+     <!-- ABOUT SECTION  ENN-->
+
+   <!-- CLIENTS SECTION -->
+    <section id="coverage">
+        <p>COVERAGE SECTION</p>
+    </section>
+   <!-- CLIENTS SECTION END-->
+
+   <!-- CAREERS SECTION -->
+    <section id="careers">
+
+    </section>
+   <!-- CAREERS SECTION END-->
+
+   <!-- CONTACT SECTION -->
+    <section id="contact">
+
+    </section>
+     <!-- CONTACT SECTION END-->
 
 </body>
 
