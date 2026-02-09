@@ -53,6 +53,22 @@ window.TRANSLATIONS = {
     aboutTitle: "About Us",
     aboutText: "RIMEX Carriers is a professional ground transportation company based in Laredo, Texas, providing nationwide dry van freight services throughout the United States. Operating under the RIMEX Carriers name since 2024, our team brings more than a decade of experience delivering transportation solutions across the country. Our operation is built on reliability, punctuality, and a strong commitment to customer service, with a focus on safe, compliant operations and clear communication to ensure consistent, dependable service from origin to destination.",
     aboutBtn: "More about us",
+
+    // CLIENTS
+    clientsTitle: "Our Clients",
+    careersTitle: "Join Our Team",
+    careersDesc: "Our company is always looking for experienced people who want to become part of our team. We are truly dedicated to safety, exceptional service, and satisfaction. So make a wise choice!",
+    careersBtn: "View Positions",
+
+    // CONTACT
+    contactTitle: "Contact",
+    rimexCarriers: "RIMEX Carriers",
+    location: "Location",
+    locationData: "903 CRESTVIEW DR LAREDO, TX 78045",
+    phone: "Phone",
+    phoneData: "+1 (956) 977-9911",
+    email: "Email",
+    emailData: "rimexcarriers@gmail.com"
     
   },
   es: {
@@ -108,6 +124,22 @@ window.TRANSLATIONS = {
     aboutTitle: "Sobre nosotros",
     aboutText: "RIMEX Carriers es una empresa profesional de transporte terrestre con sede en Laredo, Texas, que ofrece servicios de carga en furgonetas secas a nivel nacional en todo Estados Unidos. Operando bajo el nombre de RIMEX Carriers desde 2024, nuestro equipo cuenta con más de una década de experiencia brindando soluciones de transporte en todo el país. Nuestras operaciones se basan en la confiabilidad, la puntualidad y un firme compromiso con el servicio al cliente, con un enfoque en operaciones seguras y conformes, y una comunicación clara para garantizar un servicio consistente y confiable desde el origen hasta el destino.",
     aboutBtn: "Más sobre nosotros",
+
+    // CLIENTS
+    clientsTitle: "Nuestros clientes",
+    careersTitle: "Únete a nuestro equipo",
+    careersDesc: "Nuestra empresa siempre busca personas con experiencia que quieran formar parte de nuestro equipo. Nos dedicamos a la seguridad, un servicio excepcional y la satisfacción. ¡Así que elija con inteligencia!",
+    careersBtn: "Puestos disponibles",
+
+    // CONTACT
+    contactTitle: "Contáctanos",
+    rimexCarriers: "RIMEX Carriers",
+    location: "Dirección",
+    locationData: "903 CRESTVIEW DR LAREDO, TX 78045",
+    phone: "Teléfono",
+    phoneData: "+1 (956) 977-9911",
+    email: "Correo electrónico",
+    emailData: "rimexcarriers@gmail.com",
     
   }
 };
