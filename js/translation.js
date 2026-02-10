@@ -76,6 +76,37 @@ window.TRANSLATIONS = {
     messageLabel: "Message",
     sendMessage: "Send",
     messagePlacehoder: "Tell us about your freight needs...",
+
+    // ALL INDUSTRIES
+    industries: "Industries",
+    allIndustries: "All Industries",
+    supplyChain: "Rimex supply chain specialists understand the complexities and dynamics of each segment of industry",
+    automotiveParts: "Automotive parts and components Industrial equipment and machinery (non-hazardous) Metal parts and fabricated products Packaging materials",
+
+    // CONSUMER SECOND PAGE
+    consumerShortText : "General retail merchandise | Packaged consumer products | Household goods | E-commerce shipments",
+
+    // FOOD SECOND PAGE
+    foodShort: "Packaged and shelf-stable food products Bottled goods (non-temperature controlled) Dry food ingredients \n (No refrigerated or frozen freight)",
+    foodAclaration: "(No refrigerated or frozen freight)",
+
+    // ELECTRONICS SECOND PAGE
+    electronicsShort: "Consumer electronics \n Electrical components \n Technology equipment (non-hazardous)",
+
+    // PLASTICS SECOND PAGE
+    plasticsShort: "Plastic products and components \n Non-hazardous chemicals and raw materials \n Resin products (non-hazmat)",
+
+    // TEXTILES SECODN PAGE
+    textiles: "Textiles & Apparel",
+    textilesShort: "Apparel and footwear \n Textile products \n Finished fabric goods",
+
+    // CONSTRUCTION SECOND PAGE
+    construction: "Construction & Building Materials",
+    constructionShort: "Building supplies \n Construction materials (non-hazardous) \n Hardware and fixtures",
+
+    // PAPER & PACKING SECONS PAGE
+    paper: "Paper & Packaging",
+    paperShort: "Paper products \n Cardboard and packaging materials \n Printed materials",
     
   },
   es: {
@@ -154,6 +185,37 @@ window.TRANSLATIONS = {
     messageLabel: "Mensaje",
     sendMessage: "Enviar",
     messagePlacehoder: "Cuéntenos sobre tus necesidades de transporte...",
+
+     // ALL INDUSTRIES
+    industries: "Industrias",
+    allIndustries: "Toda la industria",
+    supplyChain: "Los especialistas en la cadena de suministro de Rimex comprenden las complejidades y la dinámica de cada segmento de la industria",
+    automotiveParts: "Piezas y componentes automotrices Equipos y maquinaria industrial (no peligrosos) Piezas metálicas y productos fabricados Materiales de embalaje",
+
+    // CONSUMER SECOND PAGE
+    consumerShortText : "Mercancía general al por menor, productos de consumo envasados, artículos para el hogar y envíos de comercio electrónico.",
+
+    // FOOD SECOND PAGE
+    foodShort: "Productos alimenticios envasados ​​y estables Productos embotellados (sin control de temperatura) Ingredientes de alimentos secos",
+    foodAclaration: "(Sin transporte refrigerado ni congelado)",
+
+     // ELECTRONICS SECOND PAGE
+    electronicsShort: "Electrónica de consumo \n Componentes eléctricos \n Equipos tecnológicos (no peligrosos)",
+
+    // PLASTICS SECOND PAGE
+    plasticsShort: "Productos y componentes plásticos \n Productos químicos y materias primas no peligrosos \n Productos de resina (no peligrosos)",
+
+    // TEXTILES SECODN PAGE
+    textiles: "Textiles y prendas de vestir",
+    textilesShort: "Prendas de vestir y calzado \n Productos textiles \n Productos textiles terminados",
+
+     // CONSTRUCTION SECOND PAGE
+    construction: "Construcción y materiales de construcción",
+    constructionShort: "Materiales de construcción \n Materiales de construcción (no peligrosos) \n Ferretería y accesorios",
+
+     // PAPER & PACKING SECONS PAGE
+    paper: "Papel y embalaje",
+    paperShort: "Productos de papel \n Cartón y materiales de embalaje \n Materiales impresos",
   }
     
   
