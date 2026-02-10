@@ -10,6 +10,12 @@ export function initLanguageSwitch() {
       }
     });
 
+    const whatsappLink = document.getElementById('whatsapp-link');
+    if (whatsappLink && window.TRANSLATIONS?.[lang]?.whatsappMsg) {
+        const message = window.TRANSLATIONS[lang].whatsappMsg;
+        whatsappLink.href = `https://wa.me/19569779911?text=${encodeURIComponent(message)}`;
+    }
+
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       const key = el.getAttribute("data-i18n-placeholder");
       if (window.TRANSLATIONS?.[lang]?.[key]) {
@@ -29,6 +35,5 @@ export function initLanguageSwitch() {
     });
   }
 
-  // Set initial language
   setLanguage(localStorage.getItem("lang") || "en");
 }

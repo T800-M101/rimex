@@ -107,6 +107,10 @@ window.TRANSLATIONS = {
     // PAPER & PACKING SECONS PAGE
     paper: "Paper & Packaging",
     paperShort: "Paper products \n Cardboard and packaging materials \n Printed materials",
+
+    // WHATSAPP
+    whatsappMsg: "Hi, I'm looking for a quote",
+    whatsappTooltip: "Get a quote here"
     
   },
   es: {
@@ -216,6 +220,10 @@ window.TRANSLATIONS = {
      // PAPER & PACKING SECONS PAGE
     paper: "Papel y embalaje",
     paperShort: "Productos de papel \n Cartón y materiales de embalaje \n Materiales impresos",
+
+    // WHATSAPP
+    whatsappMsg: "Hola, busco una cotización",
+    whatsappTooltip: "Cotiza por aquí"
   }
     
   
