@@ -4,6 +4,7 @@ window.TRANSLATIONS = {
     // HEADER
     langLabel: "EN",
     company: "RIMEX",
+    carriers: "Carriers",
     home: "Home",
     services: "Services",
     about: "About Us",
@@ -96,7 +97,7 @@ window.TRANSLATIONS = {
     // PLASTICS SECOND PAGE
     plasticsShort: "Plastic products and components \n Non-hazardous chemicals and raw materials \n Resin products (non-hazmat)",
 
-    // TEXTILES SECODN PAGE
+    // TEXTILES SECOND PAGE
     textiles: "Textiles & Apparel",
     textilesShort: "Apparel and footwear \n Textile products \n Finished fabric goods",
 
@@ -108,15 +109,34 @@ window.TRANSLATIONS = {
     paper: "Paper & Packaging",
     paperShort: "Paper products \n Cardboard and packaging materials \n Printed materials",
 
+    contactUs: "Contact us",
+
     // WHATSAPP
     whatsappMsg: "Hi, I'm looking for a quote",
-    whatsappTooltip: "Get a quote here"
-    
+    whatsappTooltip: "Get a quote here",
+
+    // POWER UNITS
+    powerUnites: "Power Units",
+    highway: "Highway",
+    highwayText: "We provide nationwide dry van transportation services for general, non-hazardous freight throughout the United States. Our operations are focused on safety, regulatory compliance, and consistent service performance, ensuring each shipment is handled with care and reliability. With an emphasis on clear communication and on-time delivery, we support our customers’ supply chain needs with dependable dry van solutions from origin to destination.",
+    inlcudes: "Our transportation services include:",
+    serviceDoorToDoor: "Door-to-Door Service",
+    serviceFTL: "FTL Service (Full Truckload)",
+    serviceLTL: "LTL Service (Less Than Truckload)",
+    serviceDedicated: "Dedicated Service (Exclusive capacity for a single customer)",
+    serviceNationwide: "Nationwide Freight Coverage Across the United States",
+    serviceDOT: "Specialized in the latest U.S. DOT (Department of Transportation) regulations and compliance requirements",
+
+    // EXPERTS
+    experts: "Ask the Experts About Your Freight.",
+    expertsTtext: "Our experts are always ready to help. Get in touch with us and we'll find the right solution to meet your needs."
   },
+
   es: {
     // HEADER
     langLabel: "ES",
     company: "RIMEX",
+    carriers: "Carriers",
     home: "Inicio",
     services: "Servicios",
     about: "Sobre Nosotros",
@@ -217,13 +237,31 @@ window.TRANSLATIONS = {
     construction: "Construcción y materiales de construcción",
     constructionShort: "Materiales de construcción \n Materiales de construcción (no peligrosos) \n Ferretería y accesorios",
 
-     // PAPER & PACKING SECONS PAGE
+     // PAPER & PACKING SECOND PAGE
     paper: "Papel y embalaje",
     paperShort: "Productos de papel \n Cartón y materiales de embalaje \n Materiales impresos",
+    contactUs: "Contactanos",
 
     // WHATSAPP
     whatsappMsg: "Hola, busco una cotización",
-    whatsappTooltip: "Cotiza por aquí"
+    whatsappTooltip: "Cotiza por aquí",
+    
+    // POWER UNITS
+    powerUnites: "Power Units",
+    highway: "Carretera",
+    highwayText: "Ofrecemos servicios de transporte en furgonetas secas a nivel nacional para carga general no peligrosa en todo Estados Unidos. Nuestras operaciones se centran en la seguridad, el cumplimiento normativo y un servicio constante, garantizando un manejo cuidadoso y confiable de cada envío. Con énfasis en la comunicación clara y la entrega puntual, satisfacemos las necesidades de la cadena de suministro de nuestros clientes con soluciones confiables de furgonetas secas desde el origen hasta el destino.",
+    inlcudes: "Nuestros servicios de transporte incluyen:",
+    serviceDoorToDoor: "Servicio puerta a puerta",
+    serviceFTL: "Servicio FTL (Camión completo)",
+    serviceLTL: "Servicio LTL (menos de un camión completo)",
+    serviceDedicated: "Servicio Dedicado (Capacidad exclusiva para un solo cliente)",
+    serviceNationwide: "Cobertura de carga a nivel nacional en todos los Estados Unidos",
+    serviceDOT: "Especializados en las últimas regulaciones y requisitos de cumplimiento del DOT (Departamento de Transporte) de EE. UU.",
+
+    // EXPERTS
+    experts: "Pregunta a los expertos sobre tu carga..",
+    expertsTtext: "Nuestros expertos siempre están listos para ayudarte. Contáctanos y encontraremos la solución perfecta para tus necesidades."
+    
   }
     
   

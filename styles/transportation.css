@@ -1,0 +1,245 @@
+ /* =========================
+       TRANSPORTATION SECTION
+    ========================= */
+ .transportation {
+     display: flex;
+     align-items: stretch;
+     justify-content: space-between;
+     width: 100%;
+     height: 450px;
+ }
+
+ .transportation-text {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+ }
+
+ .transportation-text h2 {
+     color: var(--blue);
+ }
+
+ .transportation-image {
+     display: block;
+     width: 50%;
+     height: 100%;
+ }
+
+ .transportation-image img {
+     width: 100%;
+     height: 100%;
+     box-shadow: var(--shadow-md);
+     object-fit: cover;
+ }
+
+ /* =========================
+       POWER UNITS SECTION
+    ========================= */
+ /* Contenedor principal */
+ .power-units {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 60px 0;
+ }
+
+ .power-units>span {
+     font-size: 1.2rem;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: var(--blue);
+     font-weight: 700;
+     margin-bottom: 40px;
+     display: block;
+ }
+
+ .power-units-text {
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+     gap: 50px;
+     width: 100%;
+ }
+
+ .power-units-text img {
+     width: 50%;
+     object-fit: cover;
+     border-radius: var(--border-radius);
+     box-shadow: var(--shadow-md);
+ }
+
+ .power-units-text .text {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: left;
+ }
+
+ .power-units-text .text span:first-of-type {
+     font-size: 2.4rem;
+     color: var(--blue);
+     margin-bottom: 15px;
+     display: block;
+ }
+
+ .power-units-text .text span:nth-of-type(2) {
+     font-size: 1.6rem;
+     font-weight: bold;
+     color: var(--blue);
+ }
+
+ .power-units-text .text p {
+     margin-bottom: 25px;
+     font-size: 1.6rem;
+     line-height: 1.6;
+ }
+
+ .power-units-text .text ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .power-units-text .text li {
+     position: relative;
+     padding-left: 25px;
+     margin-bottom: 10px;
+ }
+
+ .power-units-text .text li::before {
+     content: "•";
+     color: var(--blue);
+     font-weight: bold;
+     font-size: 2.5rem;
+     position: absolute;
+     left: 0;
+     top: 0;
+     line-height: 1;
+ }
+
+ /* =========================
+     ASK THE EXPERTS
+    ========================= */
+    .experts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        gap: 30px;              
+        text-align: center;
+    }
+    .experts h2 {
+        color: var(--blue);
+    }
+
+    .experts p {
+        font-size: 2rem;
+    }
+
+    .experts h2, 
+    .experts p {
+        margin: 0; 
+    }
+
+
+
+ @media (max-width: 768px) {
+
+     /* =========================
+       TRANSPORTATION SECTION
+    ========================= */
+     .transportation {
+         flex-direction: column;
+         height: auto;
+         align-items: center;
+     }
+
+     .transportation-text {
+         width: 100%;
+         padding: 40px 20px;
+         text-align: center;
+         margin-top: 30px;
+     }
+
+     .transportation-image {
+         width: 100%;
+         height: 300px;
+     }
+
+     .transportation-image img {
+         border-radius: 0;
+         box-shadow: none;
+     }
+
+     /* =========================
+       POWER UNITS SECTION
+    ========================= */
+     .power-units {
+         padding: 40px 20px;
+     }
+
+     .power-units>span {
+         font-size: 1rem;
+         margin-bottom: 30px;
+         letter-spacing: 1.5px;
+     }
+
+     .power-units-text {
+         flex-direction: column;
+         gap: 30px;
+     }
+
+     .power-units-text img {
+         width: 100%;
+         height: 300px;
+         object-position: center;
+     }
+
+     .power-units-text .text {
+         width: 100%;
+         padding: 0;
+     }
+
+     .power-units-text .text span:first-of-type {
+         font-size: 2rem;
+         margin-bottom: 12px;
+     }
+
+     .power-units-text .text span:nth-of-type(2) {
+         font-size: 1.4rem;
+     }
+
+     .power-units-text .text p {
+         font-size: 1.4rem;
+         line-height: 1.5;
+         margin-bottom: 20px;
+     }
+
+     .power-units-text .text li {
+         padding-left: 22px;
+         margin-bottom: 8px;
+         font-size: 1.4rem;
+     }
+
+     .power-units-text .text li::before {
+         font-size: 1.8rem;
+         line-height: 1.3;
+         top: -2px;
+     }
+
+     /* =========================
+     ASK THE EXPERTS
+    ========================= */
+
+    .experts {
+        height: auto;
+        min-height: 350px; 
+        padding: 40px 20px; 
+        gap: 20px; 
+    }
+
+ }

@@ -96,6 +96,10 @@ label {
     font-size: 1.6rem;
 }
 
+li {
+    font-size: 1.6rem;
+}
+
 ::placeholder {
     font-size: 1.4rem;
 }
@@ -110,6 +114,10 @@ label {
 
 .bg-alt {
     background-color: var(--primary-color);
+}
+
+.bg-contrast {
+    background-color: #d1d1d1;
 }
 
 .inner-content {
@@ -152,6 +160,22 @@ label {
 
 .btn-primary {
     background-color: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+    font-family: var(--font-accent);
+    font-style: normal;
+}
+
+.btn-white {
+    background-color: var(--blue) ;
+    color: var(--white);
+    border: 2px solid var(--blue);
+    font-family: var(--font-accent);
+    font-style: normal;
+}
+
+.btn-outline {
+    background-color: none;
     color: var(--white);
     border: 2px solid var(--blue);
     font-family: var(--font-accent);
