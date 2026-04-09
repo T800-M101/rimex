@@ -6,7 +6,6 @@ export function initFormValidation() {
         name: "name",
         tel: "tel",
         email: "email",
-        errorSuffix: "Error",
       },
     },
     {
@@ -16,7 +15,6 @@ export function initFormValidation() {
         tel: "contact-tel",
         email: "contact-email",
         message: "message",
-        errorSuffix: "Error",
       },
     },
   ];
@@ -36,7 +34,7 @@ export function initFormValidation() {
       elements.name.addEventListener("input", () => {
         elements.name.value = elements.name.value.replace(
           /[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g,
-          "",
+          ""
         );
         clearValidationError(elements.name);
       });
@@ -51,69 +49,79 @@ export function initFormValidation() {
 
     if (elements.email) {
       elements.email.addEventListener("input", () =>
-        clearValidationError(elements.email),
+        clearValidationError(elements.email)
       );
     }
 
-formEl.addEventListener("submit", (e) => {
-  let isValid = true;
+    formEl.addEventListener("submit", (e) => {
+      let isValid = true;
 
-  if (
-    !validateField(
-      elements.name,
-      /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,50}$/,
-      "Name is required (min 2 chars)"
-    )
-  ) isValid = false;
+      if (
+        !validateField(
+          elements.name,
+          /^[A-Za-záéíóúÁÉÍÓÚñÑ\s]{2,50}$/,
+          "Name is required (min 2 chars)"
+        )
+      )
+        isValid = false;
 
-  if (
-    !validateField(
-      elements.tel,
-      /^\d{10,}$/,
-      "Valid phone is required (10 digits)"
-    )
-  ) isValid = false;
+      if (
+        !validateField(
+          elements.tel,
+          /^\d{10,}$/,
+          "Valid phone is required (10 digits)"
+        )
+      )
+        isValid = false;
 
-  if (
-    !validateField(
-      elements.email,
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-      "Invalid email format"
-    )
-  ) isValid = false;
+      if (
+        !validateField(
+          elements.email,
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          "Invalid email format"
+        )
+      )
+        isValid = false;
 
-  if (!isValid) {
-    e.preventDefault(); 
-    return;
-  }
+      if (!isValid) {
+        e.preventDefault();
+        return;
+      }
 
-  // UX del botón (opcional)
-  const button = formEl.querySelector('button[type="submit"]');
-  if (button) {
-    button.disabled = true;
-    button.textContent = "Sending...";
-  }
-});
+      const button = formEl.querySelector('button[type="submit"]');
+      if (button) {
+        button.disabled = true;
+        button.textContent = "Sending...";
+      }
+    });
+  });
+}
 
 function validateField(input, regex, message) {
-    if (!input) return true; 
-    const errorEl = input.nextElementSibling; 
-    
-    if (!regex.test(input.value.trim())) {
-        input.classList.add("shake-error");
-        if (errorEl && errorEl.classList.contains("error-message")) {
-            errorEl.textContent = message;
-            errorEl.style.display = "block";
-        }
-        return false;
+  if (!input) return true;
+
+  const errorEl = input.nextElementSibling;
+
+  if (!regex.test(input.value.trim())) {
+    input.classList.add("shake-error");
+
+    if (errorEl && errorEl.classList.contains("error-message")) {
+      errorEl.textContent = message;
+      errorEl.style.display = "block";
     }
-    return true;
+
+    return false;
+  }
+
+  return true;
 }
 
 function clearValidationError(input) {
-    input.classList.remove("shake-error");
-    const errorEl = input.nextElementSibling;
-    if (errorEl && errorEl.classList.contains("error-message")) {
-        errorEl.style.display = "none";
-    }
+  input.classList.remove("shake-error");
+
+  const errorEl = input.nextElementSibling;
+
+  if (errorEl && errorEl.classList.contains("error-message")) {
+    errorEl.style.display = "none";
+  }
 }
