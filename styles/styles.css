@@ -7,7 +7,6 @@
     --primary-color: #f5f7fa;
     --secondary-color: #d4d4d4;
     --accent-color: #b0c60d;
-    ;
     --white: #ffffff;
     --black: #000000;
     --blue: #1c85c6;
@@ -60,7 +59,7 @@ html {
 
 body {
     font-family: var(--font-main);
-    line-height: 2;
+    line-height: 1.6;
     color: var(--neutral);
     background-color: var(--primary-color);
     margin: 0;
@@ -80,16 +79,24 @@ h1 {
 h2 {
     color: var(--blue);
     font-size: 3.2rem;
-    font-style: normal;
 }
 
 h3 {
     font-size: 2.4rem;
 }
 
-p {
-    color: var(--neutral);
+h4 {
     font-size: 1.8rem;
+}
+
+h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+
+p {
+    font-size: 2rem;
 }
 
 label {
@@ -110,6 +117,10 @@ li {
     justify-content: center;
     align-items: center;
     width: 100vw;
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 .bg-alt {
@@ -175,11 +186,11 @@ li {
 }
 
 .btn-outline {
-    background-color: none;
-    color: var(--white);
-    border: 2px solid var(--blue);
-    font-family: var(--font-accent);
-    font-style: normal;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    transition: all 0.3s ease;
+    font-size: 1.4rem;
 }
 
 .btn-primary:hover {
@@ -193,12 +204,6 @@ li {
 .btn-primary:active {
     transform: translateY(0);
     box-shadow: none;
-}
-
-.btn-outline {
-    background-color: transparent;
-    border: 2px solid var(--blue);
-    color: var(--blue);
 }
 
 .btn-outline:hover {
@@ -265,12 +270,6 @@ header {
     align-items: center;
     width: 90%;
     max-width: 1200px;
-}
-
-h1 {
-    margin: 0;
-    font-size: 3.5rem;
-    color: var(--blue);
 }
 
 /* =========================
@@ -457,18 +456,14 @@ input:checked+.slider:before {
     width: 51%;
 }
 
-.deliver-text h2 {
-    font-family: 'Monserrat' sans-serif;
-    font-size: 4rem;
-}
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     background-color: var(--white);
-    padding: 60px 100px;
+    padding: 60px 85px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
 }
@@ -479,8 +474,9 @@ form h3 {
     font-weight: normal;
 }
 
-form p {
+form h4 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 form label,
@@ -562,10 +558,6 @@ input.error+.error-message {
    INDUSTRIES SECTION
 ========================= */
 
-.bg-white {
-    background-color: var(--white);
-}
-
 .section-title {
     text-align: center;
     margin-bottom: 50px;
@@ -617,7 +609,6 @@ input.error+.error-message {
 
 .card-content h3 {
     text-align: center;
-    font-size: 2rem;
     color: var(--blue);
     margin-bottom: 15px;
     line-height: 1.2;
@@ -625,14 +616,8 @@ input.error+.error-message {
 
 .card-content p {
     font-size: 1.6rem;
-    line-height: 1.6;
     color: var(--neutral);
     margin: 0;
-}
-
-.center-btn {
-    display: flex;
-    justify-content: center;
 }
 
 .btn-outline {
@@ -829,7 +814,6 @@ input.error+.error-message {
 
 .clients-track {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 40px;
     overflow-x: auto;
@@ -1604,6 +1588,24 @@ footer.section-wrapper {
     .whatsapp-tooltip {
         display: none; 
     }
+}
+
+ /* =========================
+        WHATSAPP MOBILE
+========================= */ 
+.client-logo-square {
+  width: 180px;
+  height: 180px;
+  object-fit: contain; /* keeps logo proportions */
+  background-color: #f5f5f5; /* fallback background */
+  border-radius: 12px; /* soft rounded corners */
+  padding: 16px; /* space inside */
+  display: block;
+}
+
+.client-logo-square:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 

@@ -19,7 +19,6 @@
     <!-- MAIN MENU -->
     <header>
         <nav class="main-menu">
-            <!-- <h1 data-i18n="company"></h1> -->
             <a href="#">
                 <img src="/assets/home/logo.webp" alt="RIMEX Carriers Logo">
             </a>
@@ -37,7 +36,7 @@
                 <a href="#contact" data-i18n="contact"></a>
 
                 <div class="header-actions">
-                    <a href="#contact" class="btn btn-primary" id="quote" data-i18n="getQuote"></a>
+                    <a href="#get-in-touch" class="btn btn-primary" id="quote" data-i18n="getQuote"></a>
 
                     <div class="language-switch">
                         <label class="switch">
@@ -60,9 +59,15 @@
                 <p data-i18n="deliverDesc"></p>
             </div>
             <div class="form-container">
-                <form id="quoteForm" action="">
+                <form id="quoteForm" action="https://formspree.io/f/xvzvnvdd" method="POST">
                     <h3 data-i18n="offer"></h3>
-                    <p data-i18n="invitation"></p>
+                    <h4 data-i18n="invitation"></h4>
+
+                    <!-- Hidden fields -->
+                    <input type="hidden" name="_subject" value="New Quote Request">
+                    <input type="hidden" name="form_type" value="quoteForm">
+                    <input type="hidden" name="_redirect" value="https://rimexcarriers.com/gracias.html">
+                    <input type="text" name="_gotcha" style="display:none">
 
                     <!-- Full name -->
                     <label for="name" data-i18n="name"></label>
@@ -71,8 +76,7 @@
 
                     <!-- Phone number -->
                     <label for="tel" data-i18n="phone"></label>
-                    <input type="tel" id="tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
-                        placeholder="" required>
+                    <input type="tel" id="tel" name="phoneNumber" required>
                     <span class="error-message" id="phoneError" style="display: none;"></span>
 
                     <!-- Email -->
@@ -95,7 +99,7 @@
 
             <div class="industries-grid">
                 <article class="industry-card">
-                    <img src="/assets/industries/manufacturing-industrial-goods.webp" alt="Manufacturing">
+                    <img src="assets/industries/manufacturing-industrial-goods.webp" alt="Manufacturing">
                     <div class="card-content">
                         <h3 data-i18n="manofacturing"></h3>
                         <p data-i18n="manofacturingText"></p>
@@ -103,7 +107,7 @@
                 </article>
 
                 <article class="industry-card">
-                    <img src="/assets/industries/consumer-retail-goods.webp" alt="Consumer Goods">
+                    <img src="assets/industries/consumer-retail-goods.webp" alt="Consumer Goods">
                     <div class="card-content">
                         <h3 data-i18n="consumer"></h3>
                         <p data-i18n="consumerText"></p>
@@ -180,9 +184,7 @@
         <div class="experts-cta inner-content">
             <h2 data-i18n="expertsTitle"></h2>
 
-            <p class="cta-description" data-i18n="expertsDesc">
-
-            </p>
+            <p class="cta-description" data-i18n="expertsDesc"></p>
 
             <div class="cta-actions center-btn">
                 <a href="#get-in-touch" class="btn btn-primary" data-i18n="quote"></a>
@@ -203,7 +205,7 @@
                     <h2 class="section-title-left" data-i18n="aboutTitle"></h2>
                     <p data-i18n="aboutText"></p>
                 </div>
-                <button class="btn btn-outline" data-i18n="aboutBtn"></button>
+                <a href="about.html" class="btn btn-outline" data-i18n="aboutBtn"></a>
             </div>
         </div>
     </section>
@@ -216,18 +218,8 @@
             <h2 class="section-title" data-i18n="clientsTitle"></h2>
             <div class="clients-container">
                 <div class="clients-track">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+1" alt="Client 1"
-                        class="client-logo-square">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+2" alt="Client 2"
-                        class="client-logo-square">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+3" alt="Client 3"
-                        class="client-logo-square">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+4" alt="Client 4"
-                        class="client-logo-square">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+5" alt="Client 5"
-                        class="client-logo-square">
-                    <img src="https://placehold.jp/40/f5f5f5/333333/180x180.png?text=LOGO+6" alt="Client 6"
-                        class="client-logo-square">
+                    <img src="assets/clients/fema.webp" alt="fema client" class="client-logo-square">
+                    <img src="assets/clients/ufs.webp" alt="ufs client" class="client-logo-square">
                 </div>
             </div>
         </div>
@@ -269,13 +261,13 @@
                         <p data-i18n="locationData"></p>
                     </div>
                     <div class="info-item">
-                    <span data-i18n="contactPhone"></span>
+                        <span data-i18n="contactPhone"></span>
                         <p>
                             <a href="tel:+19569779911" class="phone-link" data-i18n="phoneData"></a>
                         </p>
                     </div>
                     <div class="info-item">
-                    <span data-i18n="contactEmail"></span>
+                        <span data-i18n="contactEmail"></span>
                         <p>
                             <a href="mailto:rimexcarriers@gmail.com" class="email-link" data-i18n="emailData"></a>
                         </p>
@@ -315,8 +307,14 @@
     <section class="section-wrapper bg-contrast" id="get-in-touch">
         <div class="get-in-touch inner-content">
             <div class="form-container form-center">
-                <form id="contactForm" action="">
+                <form id="contactForm" action="https://formspree.io/f/xvzvnvdd" method="POST">
                     <h2 class="section-title" data-i18n="getInTouchTitle"></h2>
+
+                    <!-- Hidden fields -->
+                    <input type="hidden" name="_subject" value="New Contact Message">
+                    <input type="hidden" name="form_type" value="contactForm">
+                    <input type="hidden" name="_redirect" value="https://rimexcarriers.com/gracias.html">
+                    <input type="text" name="_gotcha" style="display:none">
 
                     <!-- Full name -->
                     <label for="contact-name" data-i18n="name"></label>
@@ -325,8 +323,7 @@
 
                     <!-- Phone number -->
                     <label for="contact-tel" data-i18n="phone"></label>
-                    <input type="tel" id="contact-tel" name="phoneNumber" data-i18n-placeholder="phonePlaceholder"
-                        placeholder="" required>
+                    <input type="tel" id="contact-tel" name="phoneNumber" required>
                     <span class="error-message" id="contactPhoneError" style="display: none;"></span>
 
                     <!-- Email -->
@@ -334,9 +331,9 @@
                     <input type="email" id="contact-email" name="email" required>
                     <span class="error-message" id="contactEmailError" style="display: none;"></span>
 
-                    <!-- Message (optional additional field) -->
+                    <!-- Message -->
                     <label for="message" data-i18n="messageLabel"></label>
-                    <textarea id="message" name="message" rows="4" data-i18n-placeholder="messagePlacehoder"></textarea>
+                    <textarea id="message" name="message" rows="4"></textarea>
                     <span class="error-message" id="messageError" style="display: none;"></span>
 
                     <button type="submit" class="btn btn-primary" data-i18n="sendMessage"></button>

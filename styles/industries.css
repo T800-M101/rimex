@@ -43,11 +43,6 @@
      width: 100%;
  }
 
- .all-industries-title {
-     font-size: 3.2rem;
-     color: var(--blue);
- }
-
  .cards-container p {
      margin-bottom: 50px;
  }
@@ -85,14 +80,12 @@
      box-sizing: border-box;
  }
 
- .card-text span {
-     font-size: 2.4rem;
+ .card-text h3 {
      color: var(--blue);
      max-width: 600px;
  }
 
  .card-text p {
-     font-size: 1.6rem;
      max-width: 400px;
      white-space: pre-line;
  }

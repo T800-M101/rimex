@@ -1,0 +1,29 @@
+/* =========================
+       ABOUT US SECTION
+    ========================= */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+}
+
+.about-text,
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: red 1px solid;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.about-image img {
+    margin-top: 40px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
